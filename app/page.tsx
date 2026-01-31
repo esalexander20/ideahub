@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Button, Card, CardContent, Badge } from '@/components/ui'
 import prisma from '@/lib/db'
 
+// Force dynamic rendering - this page fetches from database
+export const dynamic = 'force-dynamic'
+
 // Map tags to relevant Unsplash images
 const tagImageMap: Record<string, string> = {
   'AI': 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
